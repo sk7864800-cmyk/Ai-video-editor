@@ -1,6 +1,5 @@
- <title>सुपर वेबसाइट | ई-कॉमर्स + बुकिंग + ब्लॉग</title>
+  <style><title>सुपर वेबसाइट | ई-कॉमर्स + बुकिंग + ब्लॉग</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
     :root { --primary: #2563eb; --dark: #1e293b; --light: #f9fafb; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: sans-serif; background: var(--light); color: var(--dark); }
