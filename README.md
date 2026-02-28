@@ -390,7 +390,8 @@
       }
       .hero h2 {
         font-size: 2
-indaxhtml
+indax.html
+
 
 
 
