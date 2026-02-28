@@ -390,8 +390,8 @@
       }
       .hero h2 {
         font-size: 2
-
-.../Ai-video-editor/index.html
+          
+index.html
 
 
 
