@@ -10,7 +10,6 @@
     .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
     .btn { background: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
   </style>
-</head>
 <body>
   <header>
     <h1>सुपर वेबसाइट <span>★</span></h1>
