@@ -41,3 +41,46 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Platform</title>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<h2>Buy Product ₹500</h2>
+<button onclick="payNow()">Pay</button>
+
+<script>
+async function payNow(){
+  const res = await fetch("/api/create-order",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({amount:500})
+  })
+  const order = await res.json()
+
+  const options = {
+    key:"YOUR_RAZORPAY_KEY",
+    amount:order.amount,
+    currency:"INR",
+    order_id:order.id,
+    handler:function(response){
+      alert("Payment Successful")
+    }
+  }
+
+  const rzp = new Razorpay(options)
+  rzp.open()
+}
+</script>
+
+</body>
+</html>
+
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=supersecret
+RAZORPAY_KEY_ID=your_key
+RAZORPAY_SECRET=your_secret
